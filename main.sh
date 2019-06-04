@@ -1,0 +1,32 @@
+#!/bin/sh
+
+source ./base_configuration.sh
+echo "------------------base_configuration---Ended-----------------------------"
+sleep 3
+source ./selinux_setup.sh
+echo "------------------selinux_setup---Ended----------------------------------"
+sleep 3
+source ./network_setup.sh
+echo "------------------network_setup---Ended----------------------------------"
+sleep 3
+source ./nsd_setup.sh
+echo "------------------NSD_setup---Ended--------------------------------------"
+sleep 3
+source ./unbound_setup.sh
+echo "------------------UNBOUND_setup---Ended----------------------------------"
+sleep 3
+source ./dhcpd_setup.sh
+echo "------------------DHCP_setup---Ended-------------------------------------"
+sleep 3
+source ./hostapd_setup.sh
+echo "------------------HOSTPAD_WIFI_setup---Ended-----------------------------"
+sleep 3
+source ./postfix_setup.sh
+echo "------------------POSTFIX_EMAIL_setup---Ended----------------------------"
+sleep 3
+source ./dovecot_setup.sh
+echo "------------------DOVECOT_EMAIL_setup---Ended----------------------------"
+sleep 3
+echo "------------------setup---Ended------------------------------------------"
+sleep 2
+echo "------------------SCRIPT_ENDED-------------------------------------------"
